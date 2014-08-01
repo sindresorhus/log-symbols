@@ -20,7 +20,7 @@ $ npm install --save log-symbols
 var logSymbols = require('log-symbols');
 
 console.log(logSymbols.success, 'finished successfully!');
-// On real OSes:  ✔︎ finished successfully!
+// On real OSes:  ✔ finished successfully!
 // On Windows:    √ finished successfully!
 ```
 
