@@ -3,7 +3,7 @@ var chalk = require('chalk');
 
 var main = {
 	info: chalk.blue('ℹ'),
-	success: chalk.green('✔︎'),
+	success: chalk.green('✔'),
 	warning: chalk.yellow('⚠'),
 	error: chalk.red('✖')
 };
