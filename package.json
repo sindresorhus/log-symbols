@@ -38,9 +38,9 @@
     "stdout"
   ],
   "dependencies": {
-    "chalk": "^0.5.1"
+    "chalk": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.3"
+    "ava": "0.0.4"
   }
 }
