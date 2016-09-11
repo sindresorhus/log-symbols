@@ -33,6 +33,9 @@ console.log(logSymbols.success, 'finished successfully!');
 #### warning
 #### error
 
+## Related
+
+- [figures](https://github.com/sindresorhus/figures) - Unicode symbols with Windows CMD fallbacks
 
 ## License
 
