@@ -27,11 +27,10 @@ console.log(logSymbols.success, 'finished successfully!');
 ## API
 
 ### logSymbols
-
-#### info
-#### success
-#### warning
-#### error
+* info
+* success
+* warning
+* error
 
 ## Related
 
