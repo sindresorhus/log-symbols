@@ -2,7 +2,7 @@
 var chalk = require('chalk');
 var isBrowser = require('is-in-browser').default;
 var os = require('os');
-var support = isBrowser || process.platform !== 'win32' || parseFloat(os.release()) >= 10
+var support = isBrowser || process.platform !== 'win32' || parseFloat(os.release()) >= 10;
 
 var main = {
 	info: chalk.blue('ℹ'),
