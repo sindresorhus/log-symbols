@@ -11,11 +11,11 @@ var main = {
 	error: chalk.red('✖')
 };
 
-var downgrade = {
+var fallbacks = {
 	info: chalk.blue('i'),
 	success: chalk.green('√'),
 	warning: chalk.yellow('‼'),
 	error: chalk.red('×')
 };
 
-module.exports = support ? main : downgrade;
+module.exports = support ? main : fallbacks;
