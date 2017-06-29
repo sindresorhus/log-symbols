@@ -9,6 +9,6 @@ Object.keys(logSymbols).forEach(function (el) {
 console.log('');
 
 test('returns log symbols', function (t) {
-	t.true(chalk.stripColor(logSymbols.success) === '✔' ||
+	t.assert(chalk.stripColor(logSymbols.success) === '✔' ||
 	         chalk.stripColor(logSymbols.success) === '√');
 });
