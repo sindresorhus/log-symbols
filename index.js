@@ -1,7 +1,7 @@
 'use strict';
 var chalk = require('chalk');
 var os = require('os');
-var support = process.platform !== 'win32' || process.versions.electron || parseFloat(os.release()) >= 10;
+var isSupported = process.platform !== 'win32' || os.release().split('.')[0] >= 10 || process.versions.electron;
 
 var main = {
 	info: chalk.blue('ℹ'),
@@ -17,4 +17,4 @@ var fallbacks = {
 	error: chalk.red('×')
 };
 
-module.exports = support ? main : fallbacks;
+module.exports = isSupported ? main : fallbacks;
