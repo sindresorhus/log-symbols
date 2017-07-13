@@ -1,7 +1,6 @@
 'use strict';
 var chalk = require('chalk');
-var os = require('os');
-var isSupported = process.platform !== 'win32' || os.release().split('.')[0] >= 10 || process.versions.electron;
+var isSupported = process.platform !== 'win32' || typeof document !== 'undefined' && document.nodeType === 9;
 
 var main = {
 	info: chalk.blue('ℹ'),
