@@ -5,9 +5,9 @@ var isSupported = process.platform !== 'win32' || os.release().split('.')[0] >= 
 
 var main = {
 	info: chalk.blue('ℹ'),
-	success: chalk.green('✔'),
-	warning: chalk.yellow('⚠'),
-	error: chalk.red('✖')
+	success: chalk.green('✔️'),
+	warning: chalk.yellow('⚠️'),
+	error: chalk.red('❌️')
 };
 
 var fallbacks = {
