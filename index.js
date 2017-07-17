@@ -4,6 +4,17 @@ var isSupported = (function() {
 	if (process.platform !== 'win32') {
 		return true;
 	}
+
+	var env = process.env;
+
+	if (env.APPVEYOR) {
+		return true;
+	}
+
+	if (env.ConEmuDir) {
+		return false
+	}
+
 	var os = require('os');
 	var osRelease = os.release().split('.');
 	if (
