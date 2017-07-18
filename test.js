@@ -1,7 +1,7 @@
 'use strict';
 import test from 'ava';
 import stripAnsi from 'strip-ansi';
-import b from './browser';
+import browser from './browser';
 import m from '.';
 
 for (const key of Object.keys(m)) {
@@ -14,7 +14,7 @@ test('returns log symbols', t => {
 });
 
 test('browser support', t => {
-	t.deepEqual(b, {
+	t.deepEqual(browser, {
 		info: 'ℹ️',
 		success: '✔️',
 		warning: '⚠️',
