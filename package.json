@@ -16,7 +16,8 @@
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"browser.js"
 	],
 	"keywords": [
 		"unicode",
@@ -44,5 +45,6 @@
 		"ava": "*",
 		"strip-ansi": "^4.0.0",
 		"xo": "*"
-	}
+	},
+	"browser": "browser.js"
 }
