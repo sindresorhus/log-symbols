@@ -1,15 +1,11 @@
 'use strict';
-var chalk = require('chalk');
+var color = require('./color')
 var isSupported = (function() {
 	if (process.platform !== 'win32') {
 		return true;
 	}
 
 	var env = process.env;
-
-	if (env.CI && env.APPVEYOR) {
-		return true
-	}
 
 	if (env.ConEmuDir) {
 		return false
@@ -27,18 +23,4 @@ var isSupported = (function() {
 	return false;
 })();
 
-var main = {
-	info: chalk.blue('ℹ'),
-	success: chalk.green('✔'),
-	warning: chalk.yellow('⚠'),
-	error: chalk.red('✖')
-};
-
-var fallbacks = {
-	info: chalk.blue('i'),
-	success: chalk.green('√'),
-	warning: chalk.yellow('‼'),
-	error: chalk.red('×')
-};
-
-module.exports = isSupported ? main : fallbacks;
+module.exports = process.env.CI ? require('./ci') : color(isSupported ? require('./posix') : require('./fallback'));
