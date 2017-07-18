@@ -1,14 +1,13 @@
 'use strict';
-var test = require('ava');
-var chalk = require('chalk');
-var logSymbols = require('./');
+import test from 'ava';
+import stripAnsi from 'strip-ansi';
+import m from '.';
 
-Object.keys(logSymbols).forEach(function (el) {
-	console.log(logSymbols[el], el);
-});
+for (const key of Object.keys(m)) {
+	console.log(m[key], key);
+}
 console.log('');
 
-test('returns log symbols', function (t) {
-	t.assert(chalk.stripColor(logSymbols.success) === '✔' ||
-	         chalk.stripColor(logSymbols.success) === '√');
+test('returns log symbols', t => {
+	t.true(stripAnsi(m.success) === '✔' || stripAnsi(m.success) === '√');
 });

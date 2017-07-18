@@ -1,36 +1,36 @@
 'use strict';
-var chalk = require('chalk');
-var isSupported = (function() {
+const os = require('os');
+const chalk = require('chalk');
+
+const isSupported = (() => {
 	if (process.platform !== 'win32') {
 		return true;
 	}
 
-	var env = process.env;
-
-	if (env.ConEmuDir) {
-		return false
+	if (process.env.ConEmuDir) {
+		return false;
 	}
 
-	var os = require('os');
-	var osRelease = os.release().split('.');
+	// Windows 10
+	const osRelease = os.release().split('.');
 	if (
 		Number(osRelease[0]) >= 10 &&
 		Number(osRelease[2]) >= 10586
 	) {
-		// Windows 10
 		return true;
 	}
+
 	return false;
 })();
 
-var main = {
+const main = {
 	info: chalk.blue('ℹ'),
 	success: chalk.green('✔'),
 	warning: chalk.yellow('⚠'),
 	error: chalk.red('✖')
 };
 
-var fallbacks = {
+const fallbacks = {
 	info: chalk.blue('i'),
 	success: chalk.green('√'),
 	warning: chalk.yellow('‼'),
