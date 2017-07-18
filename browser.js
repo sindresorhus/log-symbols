@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
 	info: 'ℹ️',
-	success: '✔️',
+	success: '✅',
 	warning: '⚠️',
 	error: '❌️'
 };
