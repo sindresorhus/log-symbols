@@ -1,18 +1,25 @@
 'use strict';
-var chalk = require('chalk');
+var isSupported = (function() {
+	if (process.platform !== 'win32') {
+		return true;
+	}
 
-var main = {
-	info: chalk.blue('ℹ'),
-	success: chalk.green('✔'),
-	warning: chalk.yellow('⚠'),
-	error: chalk.red('✖')
-};
+	var env = process.env;
 
-var win = {
-	info: chalk.blue('i'),
-	success: chalk.green('√'),
-	warning: chalk.yellow('‼'),
-	error: chalk.red('×')
-};
+	if (env.ConEmuDir) {
+		return false
+	}
 
-module.exports = process.platform === 'win32' ? win : main;
+	var os = require('os');
+	var osRelease = os.release().split('.');
+	if (
+		Number(osRelease[0]) >= 10 &&
+		Number(osRelease[2]) >= 10586
+	) {
+		// Windows 10
+		return true;
+	}
+	return false;
+})();
+
+module.exports = process.env.CI ? require('./browser') : (isSupported ? require('./posix') : require('./fallback'));
