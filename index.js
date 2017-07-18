@@ -3,7 +3,7 @@ const os = require('os');
 const chalk = require('chalk');
 
 const isSupported = (() => {
-	if (process.platform !== 'win32') {
+	if (process.platform !== 'win32' || process.env.CI) {
 		return true;
 	}
 
