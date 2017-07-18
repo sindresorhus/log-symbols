@@ -1,5 +1,4 @@
 'use strict';
-var color = require('./color')
 var isSupported = (function() {
 	if (process.platform !== 'win32') {
 		return true;
@@ -23,4 +22,4 @@ var isSupported = (function() {
 	return false;
 })();
 
-module.exports = process.env.CI ? require('./browser') : color(isSupported ? require('./posix') : require('./fallback'));
+module.exports = process.env.CI ? require('./browser') : (isSupported ? require('./posix') : require('./fallback'));

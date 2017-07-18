@@ -6,5 +6,5 @@ module.exports = function(module) {
 		success: chalk.green(module.success),
 		warning: chalk.yellow(module.warning),
 		error: chalk.red(module.error),
-	}
-}
+	};
+};
