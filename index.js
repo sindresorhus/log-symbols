@@ -7,10 +7,6 @@ var isSupported = (function() {
 
 	var env = process.env;
 
-	if (env.APPVEYOR) {
-		return true;
-	}
-
 	if (env.ConEmuDir) {
 		return false
 	}
