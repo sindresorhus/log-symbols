@@ -23,4 +23,4 @@ var isSupported = (function() {
 	return false;
 })();
 
-module.exports = process.env.CI ? require('./ci') : color(isSupported ? require('./posix') : require('./fallback'));
+module.exports = process.env.CI ? require('./browser') : color(isSupported ? require('./posix') : require('./fallback'));

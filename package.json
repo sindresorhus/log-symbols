@@ -16,7 +16,11 @@
     "test": "node test.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "color.js",
+    "browser.js",
+    "posix.js",
+    "fallback.js"
   ],
   "keywords": [
     "unicode",
@@ -42,5 +46,6 @@
   },
   "devDependencies": {
     "ava": "0.0.4"
-  }
+  },
+  "browser": "browser.js"
 }
