@@ -1,5 +1,5 @@
 var color = require('./color')
-module.exports = ({
+module.exports = color({
 	info: 'i',
 	success: '√',
 	warning: '‼',

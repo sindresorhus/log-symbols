@@ -1,6 +1,6 @@
 'use strict';
 var color = require('./color')
-module.exports = ({
+module.exports = color({
 	info: 'ℹ',
 	success: '✔',
 	warning: '⚠',
