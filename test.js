@@ -14,5 +14,10 @@ test('returns log symbols', t => {
 });
 
 test('browser support', t => {
-	t.is(b.success, '✔️')
+	t.deepEqual(b, {
+		info: 'ℹ️',
+		success: '✔️',
+		warning: '⚠️',
+		error: '❌️'
+	});
 });
