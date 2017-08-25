@@ -1,5 +1,6 @@
 'use strict';
-const os = require('os');
+const path = require('path');
+const fs = require('fs');
 const chalk = require('chalk');
 
 const isSupported = (() => {
@@ -11,16 +12,7 @@ const isSupported = (() => {
 		return false;
 	}
 
-	// Windows 10
-	const osRelease = os.release().split('.');
-	if (
-		Number(osRelease[0]) >= 10 &&
-		Number(osRelease[2]) >= 10586
-	) {
-		return true;
-	}
-
-	return false;
+	return fs.existsSync(path.join(process.env.windir, 'Fonts/seguiemj.ttf'));
 })();
 
 const main = {
