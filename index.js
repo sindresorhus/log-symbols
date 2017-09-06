@@ -25,7 +25,7 @@ const isSupported = (() => {
 	}
 
 	if (fs.existsSync(path.join(process.env.windir, 'Fonts/seguiemj.ttf'))) {
-		const codepage = cp.spawnSync('chcp').stdout.toString().replace(/.*?(\d+)\s*/, '$1');
+		const codepage = cp.spawnSync('chcp').stdout.toString().replace(/^.*?(\d+)\s*$/, '$1');
 		if (CpdePage[codepage]) {
 			return true;
 		}
