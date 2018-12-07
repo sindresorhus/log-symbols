@@ -7,14 +7,18 @@ const main = {
 	info: chalk.blue('ℹ'),
 	success: chalk.green('✔'),
 	warning: chalk.yellow('⚠'),
-	error: chalk.red('✖')
+	error: chalk.red('✖'),
+	question: chalk.cyan('?'),
+	danger: chalk.white('☠')
 };
 
 const fallbacks = {
 	info: chalk.blue('i'),
 	success: chalk.green('√'),
 	warning: chalk.yellow('‼'),
-	error: chalk.red('×')
+	error: chalk.red('×'),
+	question: chalk.cyan('?'),
+	danger: chalk.white('☠')
 };
 
 module.exports = isSupported ? main : fallbacks;
