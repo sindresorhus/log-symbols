@@ -38,6 +38,7 @@ console.log(logSymbols.success, 'Finished successfully!');
 
 - [figures](https://github.com/sindresorhus/figures) - Unicode symbols with Windows CMD fallbacks
 - [py-log-symbols](https://github.com/ManrajGrover/py-log-symbols) - Python port
+- [log-symbols](https://github.com/palash25/log-symbols) - Ruby port
 
 
 ## License
