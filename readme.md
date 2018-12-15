@@ -1,6 +1,6 @@
 # log-symbols [![Build Status](https://travis-ci.org/sindresorhus/log-symbols.svg?branch=master)](https://travis-ci.org/sindresorhus/log-symbols)
 
-<img src="screenshot.png" width="226" align="right">
+<img src="screenshot.png" width="226" height="192" align="right">
 
 > Colored symbols for various log levels
 

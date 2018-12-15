@@ -1,13 +1,14 @@
 'use strict';
 import test from 'ava';
 import stripAnsi from 'strip-ansi';
-import m from '.';
+import logSymbols from '.';
 
-for (const key of Object.keys(m)) {
-	console.log(m[key], key);
+// TODO: Use `Object.entries` when targeting Node.js 8
+for (const key of Object.keys(logSymbols)) {
+	console.log(logSymbols[key], key);
 }
 console.log('');
 
 test('returns log symbols', t => {
-	t.true(stripAnsi(m.success) === '✔' || stripAnsi(m.success) === '√');
+	t.true(stripAnsi(logSymbols.success) === '✔' || stripAnsi(logSymbols.success) === '√');
 });
