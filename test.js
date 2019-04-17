@@ -3,9 +3,8 @@ import test from 'ava';
 import stripAnsi from 'strip-ansi';
 import logSymbols from '.';
 
-// TODO: Use `Object.entries` when targeting Node.js 8
-for (const key of Object.keys(logSymbols)) {
-	console.log(logSymbols[key], key);
+for (const [key, value] of Object.entries(logSymbols)) {
+	console.log(value, key);
 }
 
 console.log('');
