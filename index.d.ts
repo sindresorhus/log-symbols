@@ -1,17 +1,21 @@
-export const info: string;
+declare const logSymbols: {
+	readonly info: string;
 
-/**
-@example
-```
-import logSymbols = require('log-symbols');
+	/**
+	@example
+	```
+	import logSymbols = require('log-symbols');
 
-console.log(logSymbols.success, 'Finished successfully!');
-// On good OSes:  ✔ Finished successfully!
-// On Windows:    √ Finished successfully!
-```
-*/
-export const success: string;
+	console.log(logSymbols.success, 'Finished successfully!');
+	// On good OSes:  ✔ Finished successfully!
+	// On Windows:    √ Finished successfully!
+	```
+	*/
+	readonly success: string;
 
-export const warning: string;
+	readonly warning: string;
 
-export const error: string;
+	readonly error: string;
+};
+
+export = logSymbols;
