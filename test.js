@@ -7,6 +7,7 @@ import logSymbols from '.';
 for (const key of Object.keys(logSymbols)) {
 	console.log(logSymbols[key], key);
 }
+
 console.log('');
 
 test('returns log symbols', t => {

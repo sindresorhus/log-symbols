@@ -13,10 +13,11 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
 		"index.js",
+		"index.d.ts",
 		"browser.js"
 	],
 	"keywords": [
@@ -39,12 +40,13 @@
 		"stdout"
 	],
 	"dependencies": {
-		"chalk": "^2.4.1"
+		"chalk": "^2.4.2"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"strip-ansi": "^5.0.0",
-		"xo": "^0.23.0"
+		"ava": "^1.4.1",
+		"strip-ansi": "^5.2.0",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
 	},
 	"browser": "browser.js"
 }
