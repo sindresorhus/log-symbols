@@ -41,6 +41,14 @@ console.log(logSymbols.success, 'Finished successfully!');
 - [log-symbols](https://github.com/palash25/log-symbols) - Ruby port
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-log-symbols?utm_source=npm-log-symbols&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
