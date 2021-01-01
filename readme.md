@@ -1,4 +1,4 @@
-# log-symbols [![Build Status](https://travis-ci.com/sindresorhus/log-symbols.svg?branch=master)](https://travis-ci.com/sindresorhus/log-symbols)
+# log-symbols
 
 <img src="screenshot.png" width="226" height="192" align="right">
 
