@@ -1,7 +1,7 @@
 'use strict';
 const chalk = require('chalk');
 
-const isSupported = process.platform !== 'win32' || process.env.CI || process.env.TERM === 'xterm-256color';
+const isSupported = process.platform !== 'win32' || process.env.CI || process.env.TERM === 'xterm-256color' || (process.platform === 'win32' && process.env.TERM === 'alacritty');
 
 const main = {
 	info: chalk.blue('ℹ'),
