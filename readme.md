@@ -18,8 +18,8 @@ $ npm install log-symbols
 const logSymbols = require('log-symbols');
 
 console.log(logSymbols.success, 'Finished successfully!');
-// On good OSes:  ✔ Finished successfully!
-// On Windows:    √ Finished successfully!
+// Terminals with Unicode support:     ✔ Finished successfully!
+// Terminals without Unicode support:  √ Finished successfully!
 ```
 
 ## API
