@@ -1,6 +1,6 @@
 {
 	"name": "log-symbols",
-	"version": "4.1.0",
+	"version": "5.0.0",
 	"description": "Colored symbols for various log levels. Example: `✔︎ Success`",
 	"license": "MIT",
 	"repository": "sindresorhus/log-symbols",
