@@ -1,8 +1,8 @@
-'use strict';
-
-module.exports = {
+const logSymbols = {
 	info: 'ℹ️',
 	success: '✅',
 	warning: '⚠️',
 	error: '❌️'
 };
+
+export default logSymbols;

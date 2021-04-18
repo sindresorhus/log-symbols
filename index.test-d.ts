@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import logSymbols = require('.');
+import logSymbols from './index.js';
 
 expectType<string>(logSymbols.info);
 expectType<string>(logSymbols.success);

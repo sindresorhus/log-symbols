@@ -10,8 +10,13 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": {
+		"node": "./index.js",
+		"default": "./browser.js"
+	},
 	"engines": {
-		"node": ">=10"
+		"node": ">=12"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -40,13 +45,12 @@
 	],
 	"dependencies": {
 		"chalk": "^4.1.0",
-		"is-unicode-supported": "^0.1.0"
+		"is-unicode-supported": "^1.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.4.0",
-		"strip-ansi": "^6.0.0",
+		"ava": "^3.15.0",
+		"strip-ansi": "^7.0.0",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
-	},
-	"browser": "browser.js"
+	}
 }

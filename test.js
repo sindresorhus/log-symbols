@@ -1,7 +1,6 @@
-'use strict';
-const test = require('ava');
-const stripAnsi = require('strip-ansi');
-const logSymbols = require('.');
+import test from 'ava';
+import stripAnsi from 'strip-ansi';
+import logSymbols from './index.js';
 
 for (const [key, value] of Object.entries(logSymbols)) {
 	console.log(value, key);

@@ -5,7 +5,7 @@ Includes fallbacks for Windows CMD which only supports a [limited character set]
 
 @example
 ```
-import logSymbols = require('log-symbols');
+import logSymbols from 'log-symbols';
 
 console.log(logSymbols.success, 'Finished successfully!');
 // Terminals with Unicode support:     ✔ Finished successfully!
@@ -14,12 +14,9 @@ console.log(logSymbols.success, 'Finished successfully!');
 */
 declare const logSymbols: {
 	readonly info: string;
-
 	readonly success: string;
-
 	readonly warning: string;
-
 	readonly error: string;
 };
 
-export = logSymbols;
+export default logSymbols;

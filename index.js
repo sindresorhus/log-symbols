@@ -1,6 +1,5 @@
-'use strict';
-const chalk = require('chalk');
-const isUnicodeSupported = require('is-unicode-supported');
+import chalk from 'chalk';
+import isUnicodeSupported from 'is-unicode-supported';
 
 const main = {
 	info: chalk.blue('ℹ'),
@@ -16,4 +15,6 @@ const fallback = {
 	error: chalk.red('×')
 };
 
-module.exports = isUnicodeSupported() ? main : fallback;
+const logSymbols = isUnicodeSupported() ? main : fallback;
+
+export default logSymbols;
