@@ -2,7 +2,7 @@ const logSymbols = {
 	info: 'ℹ️',
 	success: '✅',
 	warning: '⚠️',
-	error: '❌️'
+	error: '❌️',
 };
 
 export default logSymbols;

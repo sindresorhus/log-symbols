@@ -8,8 +8,8 @@ Includes fallbacks for Windows CMD which only supports a [limited character set]
 
 ## Install
 
-```
-$ npm install log-symbols
+```sh
+npm install log-symbols
 ```
 
 ## Usage
