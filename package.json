@@ -12,6 +12,7 @@
 	},
 	"type": "module",
 	"exports": {
+		"types": "./index.d.ts",
 		"node": "./index.js",
 		"default": "./browser.js"
 	},
