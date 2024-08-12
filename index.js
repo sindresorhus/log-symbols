@@ -1,18 +1,18 @@
-import chalk from 'chalk';
+import colors from 'yoctocolors';
 import isUnicodeSupported from 'is-unicode-supported';
 
 const main = {
-	info: chalk.blue('ℹ'),
-	success: chalk.green('✔'),
-	warning: chalk.yellow('⚠'),
-	error: chalk.red('✖'),
+	info: colors.blue('ℹ'),
+	success: colors.green('✔'),
+	warning: colors.yellow('⚠'),
+	error: colors.red('✖'),
 };
 
 const fallback = {
-	info: chalk.blue('i'),
-	success: chalk.green('√'),
-	warning: chalk.yellow('‼'),
-	error: chalk.red('×'),
+	info: colors.blue('i'),
+	success: colors.green('√'),
+	warning: colors.yellow('‼'),
+	error: colors.red('×'),
 };
 
 const logSymbols = isUnicodeSupported() ? main : fallback;
