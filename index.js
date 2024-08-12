@@ -1,4 +1,4 @@
-import { blue, green, red, yellow } from "colorette"
+import {blue, green, red, yellow} from 'colorette';
 import isUnicodeSupported from 'is-unicode-supported';
 
 const main = {
