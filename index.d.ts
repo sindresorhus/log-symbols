@@ -1,3 +1,5 @@
+import type * as _logSymbols from './symbols.js';
+
 /**
 Colored symbols for various log levels.
 
@@ -12,11 +14,6 @@ console.log(logSymbols.success, 'Finished successfully!');
 // Terminals without Unicode support:  √ Finished successfully!
 ```
 */
-declare const logSymbols: {
-	readonly info: string;
-	readonly success: string;
-	readonly warning: string;
-	readonly error: string;
-};
+declare const logSymbols: typeof _logSymbols;
 
 export default logSymbols;
