@@ -13,7 +13,7 @@ const fallback = {
 	success: green('√'),
 	warning: yellow('‼'),
 	error: red('×'),
-};
+}
 
 const logSymbols = isUnicodeSupported() ? main : fallback;
 
