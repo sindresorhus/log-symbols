@@ -1,6 +1,4 @@
-const info = 'ℹ️';
-const success = '✅';
-const warning = '⚠️';
-const error = '❌️';
-
-export {info, success, warning, error};
+export const info = 'ℹ️';
+export const success = '✅';
+export const warning = '⚠️';
+export const error = '❌️';
