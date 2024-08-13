@@ -1,9 +1,11 @@
 import {blue, green, yellow, red} from 'yoctocolors';
 import isUnicodeSupported from 'is-unicode-supported';
 
-const info = blue(isUnicodeSupported() ? 'ℹ' : 'i');
-const success = green(isUnicodeSupported() ? '✔' : '√');
-const warning = yellow(isUnicodeSupported() ? '⚠' : '‼');
-const error = red(isUnicodeSupported() ? '✖️' : '×');
+const _isUnicodeSupported = isUnicodeSupported();
+
+const info = blue(_isUnicodeSupported ? 'ℹ' : 'i');
+const success = green(_isUnicodeSupported ? '✔' : '√');
+const warning = yellow(_isUnicodeSupported ? '⚠' : '‼');
+const error = red(_isUnicodeSupported ? '✖️' : '×');
 
 export {info, success, warning, error};
