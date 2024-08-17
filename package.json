@@ -25,7 +25,9 @@
 	"files": [
 		"index.js",
 		"index.d.ts",
-		"browser.js"
+		"browser.js",
+		"symbols.js",
+		"browser-symbols.js"
 	],
 	"keywords": [
 		"unicode",
