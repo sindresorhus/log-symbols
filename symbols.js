@@ -1,4 +1,9 @@
-import {blue, green, yellow, red} from 'yoctocolors';
+import {
+	blue,
+	green,
+	yellow,
+	red,
+} from 'yoctocolors';
 import isUnicodeSupported from 'is-unicode-supported';
 
 const _isUnicodeSupported = isUnicodeSupported();
