@@ -11,4 +11,4 @@ const _isUnicodeSupported = isUnicodeSupported();
 export const info = blue(_isUnicodeSupported ? 'ℹ' : 'i');
 export const success = green(_isUnicodeSupported ? '✔' : '√');
 export const warning = yellow(_isUnicodeSupported ? '⚠' : '‼');
-export const error = red(_isUnicodeSupported ? '✖️' : '×');
+export const error = red(_isUnicodeSupported ? '✖' : '×');
